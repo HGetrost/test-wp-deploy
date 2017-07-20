@@ -5,13 +5,13 @@
 set :stage, :staging
 set :stage_url, "http://testwpdeploy.upliftconnect.com"
 server "52.53.47.17", user: "ubuntu", roles: %w{web app db}
-set :deploy_to, "/DATA/public_html/testwpdeploy2.upliftconnect.com"
+set :deploy_to, "/DATA/public_html/testwpdeploy.upliftconnect.com"
 
 ############################################
 # Setup Git
 ############################################
 
-set :branch, "development"
+set :branch, "master"
 
 ############################################
 # Extra Settings
